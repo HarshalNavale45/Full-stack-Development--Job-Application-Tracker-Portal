@@ -1,6 +1,6 @@
 # 🚀 Premium Job Application Tracker Portal
 
-Developed by **[Navle Harshal](https://www.linkedin.com/in/harshal-navale-a3882a383?utm_source=share_via&utm_content=profile&utm_medium=member_android)**  
+Developed by **[Navale Harshal](https://www.linkedin.com/in/harshal-navale-a3882a383?utm_source=share_via&utm_content=profile&utm_medium=member_android)**  
 👉 **[GitHub Portfolio](https://github.com/HarshalNavale45)** | **[LinkedIn Profile](https://www.linkedin.com/in/harshal-navale-a3882a383?utm_source=share_via&utm_content=profile&utm_medium=member_android)**
 
 [![MERN Stack](https://img.shields.io/badge/MERN-Stack-007acc?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
@@ -251,11 +251,11 @@ By building and polishing this system, the following critical software engineeri
 
 ## 👨‍💻 Author & Connect
 
-**Navle Harshal**
+**Navale Harshal**
 * **LinkedIn**: [harshal-navale](https://www.linkedin.com/in/harshal-navale-a3882a383?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 * **GitHub**: [@HarshalNavale45](https://github.com/HarshalNavale45)
 
 Feel free to reach out for collaboration, questions, or opportunities!
 
 ---
-*Developed with ❤️ by Navle Harshal to empower professionals and demonstrate Full-Stack Engineering excellence.*
+*Developed with ❤️ by Navale Harshal to empower professionals and demonstrate Full-Stack Engineering excellence.*
