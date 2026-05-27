@@ -131,53 +131,112 @@ All endpoints reside under the `/api` namespace. Endpoints marked with 🔒 requ
 
 ---
 
-## 🚀 Getting Started (Local Development Guide)
+## 🚀 Getting Started — How to Run This Project Locally
 
-Follow these instructions to run the application locally on your computer.
+Follow these **step-by-step instructions** to clone this repository from GitHub and run the full application on your own computer.
 
-### 1. Prerequisites
-- **Node.js**: [Download and install Node.js](https://nodejs.org/) (Version 16.x or newer recommended).
-- **MongoDB**: Have MongoDB installed locally and running as a system service, or prepare a MongoDB Atlas connection string.
+---
 
-### 2. Environment Configurations
-Create a `.env` file in the `/server` directory and declare the configuration variables:
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/job-tracker
-JWT_SECRET=your_super_strong_cryptographic_secret_key_here
-NODE_ENV=development
+### ✅ Step 1: Prerequisites
+
+Before you begin, make sure you have the following installed on your system:
+
+| Tool | Version | Download Link |
+| :--- | :--- | :--- |
+| **Node.js** | v16.x or newer | [nodejs.org](https://nodejs.org/) |
+| **Git** | Any recent version | [git-scm.com](https://git-scm.com/) |
+| **MongoDB** | Local installation OR Atlas URI | [mongodb.com](https://www.mongodb.com/) |
+
+---
+
+### ✅ Step 2: Clone the Repository from GitHub
+
+Open your terminal (CMD, PowerShell, or Git Bash) and run:
+
+```bash
+git clone https://github.com/HarshalNavale45/Full-stack-Development--Job-Application-Tracker-Portal.git
 ```
 
-### 3. Quick Run commands
+Then navigate into the project directory:
 
-#### Pre-requisite for Windows Users (If Script execution is restricted)
-If you encounter errors executing `npm` inside PowerShell, run the following command in PowerShell with administrator privileges or explicitly use `.cmd` commands:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+```bash
+cd Full-stack-Development--Job-Application-Tracker-Portal
 ```
 
-#### Step A: Boot the Backend API Server
-Navigate to the server directory, install components, and launch:
+---
+
+### ✅ Step 3: Setup & Run the Backend Server
+
+Navigate into the `server` folder and install all dependencies:
+
 ```bash
 cd server
 npm install
-npm run dev
 ```
-Upon a successful boot, the terminal will confirm:
-> **Server running in development mode on port 5000**
-> **MongoDB Connected: 127.0.0.1**
 
-#### Step B: Boot the Frontend Client
-Open a secondary terminal, navigate to the client directory, install packages, and boot:
+Now create a **`.env`** file inside the `server` folder and add the following environment variables:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/job-tracker
+JWT_SECRET=your_secret_key_here
+NODE_ENV=development
+```
+
+> 💡 **Note:** If you are using **MongoDB Atlas** (cloud), replace `MONGO_URI` with your Atlas connection string.
+
+Now start the backend development server:
+
 ```bash
-cd client
-npm install
 npm run dev
 ```
-The React development server will spawn and present the host URL:
-> **➜ Local: http://localhost:3000/**
 
-Open [http://localhost:3000/](http://localhost:3000/) in your web browser to explore the dashboard.
+✅ **Success Message you should see:**
+```
+Server running in development mode on port 5000
+MongoDB Connected: 127.0.0.1
+```
+
+---
+
+### ✅ Step 4: Setup & Run the Frontend Client
+
+Open a **new terminal window** (keep the backend server running), go back to the project root, then navigate into the `client` folder:
+
+```bash
+cd ../client
+npm install
+```
+
+Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+✅ **Success Message you should see:**
+```
+VITE v5.x  ready in xxx ms
+
+➜  Local:   http://localhost:3000/
+```
+
+---
+
+### ✅ Step 5: Open in Browser
+
+Open **Google Chrome** (or any browser) and go to:
+
+**👉 [http://localhost:3000/](http://localhost:3000/)**
+
+You will see the Job Application Tracker Portal running live on your machine. Register a new account and start tracking your job applications!
+
+---
+
+> ⚠️ **Windows Users Note:** If `npm` gives an error in PowerShell, run this command first:
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+> ```
 
 ---
 
@@ -197,29 +256,6 @@ By building and polishing this system, the following critical software engineeri
 * **GitHub**: [@HarshalNavale45](https://github.com/HarshalNavale45)
 
 Feel free to reach out for collaboration, questions, or opportunities!
-
----
-
-## 🎬 Suggested Live Demo Walkthrough Guide
-
-To showcase this application to recruiters, you can record a **1 to 2-minute video** or create a high-quality GIF. Here is the recommended script/flow for your demo:
-
-1. **The Hero/Landing Screen**:
-   - Start at the beautiful login/register page and show off the sleek, glassmorphic layout.
-2. **Secure Registration / Auth**:
-   - Register a new mock user profile (`testuser@example.com`) to demonstrate real-time input fields and JWT-protected sign-in.
-3. **Interactive Dashboard**:
-   - Land on the dashboard. Show the beautiful Recharts analytics rendering the distribution of job applications. Highlight how the graph responds when data changes.
-4. **CRUD Actions in Action**:
-   - **Create**: Add a new job application (e.g., *Google - Software Engineer - Status: Applied*).
-   - **Update**: Open the edit modal on a card and change its status from *Applied* to *Interview*, scheduled for a future date. Show the Recharts stats recalculate automatically!
-   - **Delete**: Safely delete a mock job entry to show database reactivity.
-5. **Smart Searching & Filtering**:
-   - Type in the search box to find a specific company, and toggle statuses to demonstrate live frontend filter responsiveness.
-6. **Polished Micro-interactions**:
-   - Hover over cards and buttons to display the fluid Framer Motion animations.
-7. **Sign Out**:
-   - Click logout to show clean local session termination and redirection.
 
 ---
 *Developed with ❤️ by Navle Harshal to empower professionals and demonstrate Full-Stack Engineering excellence.*
